@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Notice</title>
+</head>
+<body>
+<table width="80%" align="center" cellspacing="0" cellpadding="10" border="1">
+    <tr>
+        <td colspan="2" valign="middle" height="70">  
+			<table width="100%">
+                <tr>
+                    <td>
+                        <a href="loggedin.php" target="iFrame">
+                            <img height="48" src="/resource/logo.png">
+                        </a>
+                    </td>
+                    <td align="right">
+                        Logged in as <a href="/teacherhome" target="iFrame"><%=name%></a>&nbsp;|
+                        <a href="/logout">Logout</a>
+                    </td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <tr>
+	<td width="190" valign="top">
+			<b>&nbsp;Teacher</b><hr/>
+            <ul>
+                <li><a href="/teacherhome" target="iFrame">Dashboard</a></li>
+                
+				<li><a href="/teacherhome/sendnotice" target="iFrame">Send Notice</a></li>
+				<li><a href="/teacherhome/sendnote" target="iFrame">Send Note</a></li>
+				<li><a href="/teacherhome/viewnotice" target="iFrame">View Notice</a></li>
+            </ul> 
+			<b>&nbsp;Personal</b><hr/>
+            <ul>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+
+		
+		<table border="1" cellpadding="5" cellspacing="0">
+        <tr><td colspan="4" align="CENTER">View Notice</td></tr>
+        <tr>
+            <td>ID</td><td>Teacher ID</td><td>Subject</td><td>Notice</td>
+        </tr>
+        <% for(var i=0; i < tList.length; i++){ %>
+        <tr>
+            <td><%= tList[i].id %></td>
+            <td><%= tList[i].teacherid %></td>
+            <td><%= tList[i].subject %></td>
+            <td><%= tList[i].notice %></td>
+
+        </tr>
+        <% } %>
+    </table>
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            Copyright &copy; 2019 (AIUB-ATP3)
+        </td>
+    </tr>
+</table>
+</body>
+</html>

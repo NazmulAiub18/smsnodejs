@@ -1,0 +1,33 @@
+{
+  "name": "smsnodejs",
+  "version": "1.0.0",
+  "description": "nodejs, express & ejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazmulAiub18/smsnodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "ejs"
+  ],
+  "author": "Nazmul, Tanvir, Raju, Auntor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazmulAiub18/smsnodejs/issues"
+  },
+  "homepage": "https://github.com/NazmulAiub18/smsnodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
+  }
+}

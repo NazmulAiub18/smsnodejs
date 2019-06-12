@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+</head>
+<body>
+	<table width="80%" align="center" cellspacing="0" cellpadding="10" border="1">
+    <tr>
+        <td colspan="2" valign="middle" height="70">  
+			<table width="100%">
+                <tr>
+                    <td>
+                        <a href="loggedin.php" target="iFrame">
+                            <img height="48" src="/resource/logo.png">
+                        </a>
+                    </td>
+                    <td align="right">
+                        Logged in as <a href="/teacherhome" target="iFrame"><%=name%></a>&nbsp;|
+                        <a href="/logout">Logout</a>
+                    </td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <tr>
+	
+	<td colspan="2" align="center">
+			<b>&nbsp;Teacher Panel</b><hr/>
+            <ul>
+                
+				<li><a href="/teacherhome/sendnotice" target="iFrame">Send Notice</a></li>
+				<li><a href="/teacherhome/sendnote" target="iFrame">Send Notes</a></li>
+                <li><a href="/teacherhome/viewnotice" target="iFrame">View Notice</a></li>
+                
+            </ul> 
+			<b>&nbsp;Personal</b><hr/>
+            <ul>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            Copyright &copy; 2019 (AIUB-ATP3)
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

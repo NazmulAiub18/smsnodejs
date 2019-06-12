@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students With Highest Mark</title>
+</head>
+<body>
+<table width="80%" align="center" cellspacing="0" cellpadding="10" border="1">
+    <tr>
+        <td colspan="2" valign="middle" height="70">  
+			<table width="100%">
+                <tr>
+                    <td>
+                            <img height="48" src="/resource/logo.png">
+                    </td>
+                    <td align="right">
+                        Logged in as <a href="/adminhome" target="iFrame"><%=name%></a>&nbsp;|
+                        <a href="/logout">Logout</a>
+                    </td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <tr>
+	<td width="190" valign="top">
+			<b>&nbsp;Admin Panel</b><hr/>
+            <ul>
+                <li><a href="/adminhome" target="iFrame">Dashboard</a></li>
+                <li><a href="/adminhome/student" target="iFrame">Students Info</a></li>
+                <li><a href="/adminhome/teacher" target="iFrame">Teachers Info</a></li>
+				<li><a href="/adminhome/search" target="iFrame">Search User</a></li>
+                <li><a href="/adminhome/subject" target="iFrame">Add New Subject</a></li>
+				<li><a href="/adminhome/assignteacher" target="iFrame">Assign Teacher To Subject</a></li>
+				<li><a href="/adminhome/sendnotice" target="iFrame">Send Notice</a></li>
+				<li><a href="/adminhome/studentreport" target="iFrame">Generate Student Report</a></li>
+            </ul> 
+			<b>&nbsp;Personal</b><hr/>
+            <ul>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </td>
+        <td valign="top">
+
+		
+	
+
+<fieldset>
+    <legend><b>Generate Student Report</b></legend>
+	<form method="post">
+		<br/>
+		<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="right">Generate By</td>
+				<td>:</td>
+				<td>
+					<select name="result">
+						<option value="1" >Highest Result In First Term</option>
+						<option value="2" >Highest Result In Second Term</option>
+						<option value="3" >Highest Result In Final Term</option>
+					</select>
+				</td>
+				<td><input type="submit" value="Submit" name="submit"></td>
+			</tr>		
+			<tr><td colspan="4"><hr/></td></tr>
+		</table>
+	</form>
+</fieldset>	
+		
+		
+
+<fieldset>
+    <legend><b>PROFILE</b></legend>
+	<form>
+		<br/>
+		<table cellpadding="0" cellspacing="0">
+			<tr>
+				<td>Name</td>
+				<td>:</td>
+				<td><%= uList.name %></td>
+				<td rowspan="7" align="center">
+					<img width="128" src="/resource/<%= uList.image %>"/>
+                    <br/>
+				</td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Class</td>
+				<td>:</td>
+				<td><%= uList.class %></td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Mark Obtained</td>
+				<td>:</td>
+				<td><%= mark %></td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><%= uList.email %></td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Father's Name</td>
+				<td>:</td>
+				<td><%= uList.fathername %></td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Mother's Name</td>
+				<td>:</td>
+				<td><%= uList.mothername %></td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Address</td>
+				<td>:</td>
+				<td><%= uList.address %></td>
+			</tr>		
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Gender</td>
+				<td>:</td>
+				<td><%= uList.gender %></td>
+			</tr>
+			<tr><td colspan="3"><hr/></td></tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td>:</td>
+				<td><%= uList.dob %></td>
+			</tr>
+		</table>	
+        <hr/>
+	</form>
+</fieldset>
+	
+		
+
+	
+	
+	
+	
+	
+	
+	
+	</td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            Copyright &copy; 2019 (AIUB-ATP3)
+        </td>
+    </tr>
+</table>
+</body>
+</html>

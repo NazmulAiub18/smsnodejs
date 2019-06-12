@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+</head>
+<body>
+	<table width="80%" align="center" cellspacing="0" cellpadding="10" border="1">
+    <tr>
+        <td colspan="2" valign="middle" height="70">  
+			<table width="100%">
+                <tr>
+                    <td>
+                        <a href="loggedin.php" target="iFrame">
+                            <img height="48" src="/resource/logo.png">
+                        </a>
+                    </td>
+                    <td align="right">
+                        Logged in as <a href="/adminhome" target="iFrame"><%=name%></a>&nbsp;|
+                        <a href="/logout">Logout</a>
+                    </td>
+                </tr>
+			</table>
+        </td>
+    </tr>
+    <tr>
+	
+	<td colspan="2" align="center">
+			<b>&nbsp;Admin Panel</b><hr/>
+            <ul>
+                <li><a href="/adminhome/student" target="iFrame">Students Info</a></li>
+                <li><a href="/adminhome/teacher" target="iFrame">Teachers Info</a></li>
+				<li><a href="/adminhome/search" target="iFrame">Search User</a></li>
+                <li><a href="/adminhome/subject" target="iFrame">Add New Subject</a></li>
+				<li><a href="/adminhome/assignteacher" target="iFrame">Assign Teacher To Subject</a></li>
+				<li><a href="/adminhome/sendnotice" target="iFrame">Send Notice</a></li>
+				<li><a href="/adminhome/studentreport" target="iFrame">Generate Student Report</a></li>
+            </ul> 
+			<b>&nbsp;Personal</b><hr/>
+            <ul>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            Copyright &copy; 2019 (AIUB-ATP3)
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

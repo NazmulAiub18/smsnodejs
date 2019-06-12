@@ -1,0 +1,17 @@
+
+	<% if(uList) {%>
+	<table border="1" cellpadding="5" cellspacing="0">
+		<tr><td colspan="4" align="CENTER">Search Result</td></tr>
+		<tr>
+			<td>ID</td><td>NAME</td><td>Email</td><td>Status</td>
+		</tr>
+		<% for(var i=0; i < uList.length; i++){ %>
+		<tr>
+			<td><%= uList[i].id %></td>
+			<td><%= uList[i].name %></td>
+			<td><%= uList[i].email %></td>
+			<td><%= uList[i].status %></td>
+		</tr>
+		<% } %>
+	</table>
+	<% } %>
